@@ -1,9 +1,15 @@
-\documentclass[english, a4paper, flagCMYK]{europecv}
+\documentclass[english, a4paper, nologo, notitle]{europecv}
 \usepackage{graphicx}
-\usepackage[a4paper, left=2.5cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
 \usepackage{hyperref}
+\usepackage[none]{hyphenat}
 
 \begin{document}
+%
+% Some tweaks
+%
+\ecvNoHorRule % Remove horizontal rule
+%\ecvdate{}
 %
 % Personal data
 %
@@ -12,28 +18,30 @@
 \ecvtelephone{+39 3461724250}
 \ecvemail{scaramu1@dei.unipd.it}
 \ecvdateofbirth{16 December, 1992}
-\ecvnationality{Italian}
-\ecvbeforepicture{\raggedleft\ecvspace{-3cm}}
+%\ecvnationality{Italian}
+\ecvbeforepicture{\ecvspace{1em}\raggedleft}
 \ecvpicture[height=4cm]{img/photo.jpg}
+\ecvafterpicture{\ecvspace{-5.75cm}}
 %
 % Curriculum
 %
 \begin{europecv}
 \ecvpersonalinfo
+\ecvitem{Github profile}{\url{https://github.com/electricant}}
 
-\ecvsection{Education and academic activities}
+\ecvsection{Education}
 \ecvitem{2006-2011}{\textbf{Liceo Scientifico "Duca degli Abruzzi" in Gorizia}}
-\ecvitem{2011-2014}{\textbf{Bachelor's degree}\\&
-	Information Engineering, University of Padova\\&
-	Thesis: \emph{A Study on the Efficiency of Integrated LC Oscillators for
-	Ultra Wideband Impulse Radio Transmission}}
-\ecvitem{2014-2016}{\textbf{Master's degree}\\&
-	Electronics Engineering, University of Padova\\&
-	Thesis: \emph{Project of a Class J Power Amplifier in Integrated Bipolar
-	Technology}}
+\ecvitem{2011-2014}{\textbf{Bachelor's degree in Information Engineering}
+	(110/110)\\&
+	University of Padova, thesis title: \emph{A Study on the Efficiency of
+	Integrated LC Oscillators for Ultra Wideband Impulse Radio Transmission}}
+\ecvitem{2014-2016}{\textbf{Master's degree in Electronics Engineering}
+	(110/110 cum laude)\\&
+	University of Padova, thesis title: \emph{Project of a Class J Power
+	Amplifier in Integrated Bipolar Technology}}
 \ecvitem{June 2015}{Roberto Rocca scholarship winner}
-\ecvitem{October 2016 - present}{\textbf{Ph.D.}\\&
-	Information Engineering, University of Padova\\&
+\ecvitem{October 2016 - present}{\textbf{Ph.D.} in Information Engineering,
+	University of Padova\\&
 	Topic: \emph{integrated circuits for radio-frequency applications}}
 
 \ecvsection{Publications}
@@ -42,40 +50,17 @@
 	\emph{Class-AB and Class-J 22dBm SiGe HBT PAs for X-Band Radar Systems}}
 \ecvitem{TCAS-I 2018}{P. Scaramuzza, C. Rubino, M. Caruso, M. Tiebout,
 	A. Bevilacqua, and A. Neviani\\&
-	\emph{Class-J SiGe X-Band Power Amplifier Using a Ladder Filter-Based AM-PM
-	Distortion Reduction Technique}}
-
-\clearpage
-\ecvsection{Personal skills}
-\ecvmothertongue{Italian}
-\ecvlanguageheader{(*)}
-\ecvlanguage{English}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}
-\ecvlanguage{German}{\ecvBOne}{\ecvBOne}{\ecvATwo}{\ecvATwo}{\ecvATwo}
-\ecvlanguagefooter{(*)}
-\ecvitem{}{\textbf{Vacation studies abroad:}}
-\ecvitem{July 2008}{Euroinstitute(Insbruck, Austria)}
-\ecvitem{July 2009}{ActiLingua Academy (Vienna, Austria)}
-\ecvitem{August 2010}{Institut f\"ur Interkulturelle Komunikation
-	(Jena, Germany)}
-\ecvitem{March 2011}{Certificate in Advanced English (CAE)}
-\ecvitem{\textbf{Computer skills}}{Competent with several programming languages
-	such as: C/C++, D, Python, Java, Javascript, HTML, CSS, PHP, MATLAB and
-	functional programming languages.}
-\ecvitem{}{Database knowledge (SQL), competent in networking and sysadmin tasks
-	with Linux and BSD operating systems.}
-\ecvitem{\textbf{Electronics skills}}{Interested in electronics since childhood,
-	with practical experience in designing and fabricating circuits and PCBs.}
-\ecvitem{}{Knowledge on VHDL hardware description language.}
-\ecvitem{\textbf{Github profile}}{\url{https://github.com/electricant}}
+	\emph{Class-J SiGe X-Band Power Amplifier Using a Ladder Filter-Based
+	AM-PM Distortion Reduction Technique}}
 
 \ecvsection{Working Experience}
 \ecvitem{October 2017 - May 2018}{\textbf{Internship at Infineon Technologies
 	Villach, Austria}}
-\ecvitem{}{The internship was focused on design and measurement of integrated
-	power amplifiers for 5G cellular networks operating at 28GHz.}
+\ecvitem{}{The internship was focused on the design and measurement of
+	integrated 28GHz power amplifiers for 5G cellular networks.}
 
 \ecvsection{Other Activities}
-\ecvitem{February 2014-present}{Member of the nonprofit organization
+\ecvitem{2014-2018}{Member of the nonprofit organization
 	\emph{Faber Libertatis} in Padova. The organization recycles and repairs
 	obsolete computers using free and open source software. The computers are
 	then given away for charity.}
@@ -91,5 +76,31 @@
 	in Analog Integrated Circuits Design (A. Bevilacqua)}
 \ecvitem{October 2018 - February 2019}{Academic tutoring at the University of
 	Padova in Integrated Circuits for Signal Processing (A. Gerosa)}
+
+\ecvsection{Personal skills}
+\ecvmothertongue{Italian}
+\ecvitem{}{} % spacer
+\ecvlanguageheader{(*)}
+\ecvlanguage{English}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}
+\ecvlanguage{German}{\ecvBOne}{\ecvBOne}{\ecvATwo}{\ecvATwo}{\ecvATwo}
+\ecvlanguagefooter{(*)}
+\ecvitem{}{} % spacer
+\ecvitem{March 2011}{Certificate in Advanced English (CAE)}
+\ecvitem{\textbf{Vacation studies abroad}}{}
+\ecvitem{July 2008}{Euroinstitute(Insbruck, Austria)}
+\ecvitem{July 2009}{ActiLingua Academy (Vienna, Austria)}
+\ecvitem{August 2010}{Institut f\"ur Interkulturelle Komunikation
+	(Jena, Germany)}
+\ecvitem{}{} % spacer
+\ecvitem{\textbf{Computer skills}}{Competent with several programming languages
+	such as: C/C++, D, Python, Java, Javascript, HTML, CSS, PHP, MATLAB and
+	functional programming languages.}
+\ecvitem{}{Database knowledge (SQL), competent in networking and sysadmin tasks
+	with Linux and BSD operating systems.}
+\ecvitem{}{Electronic circuits simulations with SPICE and Cadence Virtuoso.}
+\ecvitem{\textbf{Electronics skills}}{Interested in electronics since childhood,
+	with practical experience in designing and fabricating circuits and PCBs.}
+\ecvitem{}{Knowledge on VHDL hardware description language.}
+
 \end{europecv}
 \end{document}
