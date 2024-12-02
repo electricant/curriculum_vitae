@@ -5,6 +5,7 @@ all: en it
 
 en: curriculum-en.pdf
 it: curriculum-it.pdf
+lima: curriculum-en-lima.pdf
 
 %.pdf: tex/%.tex
 	@$(PDFLATEX) $< $(COLOR)
