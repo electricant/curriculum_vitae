@@ -1,97 +1,142 @@
-\documentclass[italian, a4paper, flagCMYK]{europecv}
+\documentclass[italian, a4paper, nologo, notitle]{europecv}
 \usepackage{graphicx}
-\usepackage[a4paper, left=2.5cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
 \usepackage{hyperref}
+\usepackage[none]{hyphenat}
 
 \begin{document}
+%
+% Some tweaks
+%
+\ecvNoHorRule % Remove horizontal rule
+\ecvLeftColumnWidth{4.5cm}
 %
 % Personal data
 %
 \ecvname{Scaramuzza Paolo}
-\ecvaddress{via Androna della Pergola 14\\& 34170 Gorizia (GO), Italia}
-\ecvtelephone{346-1724250}
-\ecvemail{paolo.scaramuzza@studenti.unipd.it}
+\ecvfootername{Scaramuzza Paolo - RF EE}
+\ecvaddress{via dei Tigli 10\\& 34151 Trieste (TS), Italia}
+\ecvtelephone{+39 3461724250}
+\ecvemail{paoscr@gmail.com}
 \ecvdateofbirth{16 Dicembre, 1992}
-\ecvnationality{Italiana}
-\ecvbeforepicture{\raggedleft\ecvspace{-3cm}}
-\ecvpicture[height=3.5cm]{img/photo.jpg}
+%\ecvnationality{Italiana}
+%\ecvbeforepicture{\\ecvspace{-1em}\raggedleft}
+\ecvpicture[height=4cm]{img/photo.jpg}
+\ecvafterpicture{\ecvspace{-5.5cm}}
 %
 % Curriculum
 %
 \begin{europecv}
 \ecvpersonalinfo
+\ecvitem{Profilo Github}{\url{https://github.com/electricant}}
+\ecvitem{LinkedIn}{https://www.linkedin.com/in/paolo-scaramuzza}
 
-\ecvsection{Istruzione e formazione}
-\ecvitem{dal 2009 al 2010}{Membro della consulta provinciale degli studenti}
-\ecvitem{Marzo 2010 e Marzo 2011}{Partecipazione alla gara di matematica a
-	squadre "Coppa Aurea"}
-\ecvitem{Ottobre 2010}{Eletto rappresentante di istituto. Nello stesso anno ha
-	organizzato una giornata di incontro con l'astrofisica Margherita Hack
-	che ha intervistato a nome di tutti gli studenti}
-\ecvitem{Febbraio 2011}{Partecipazione alla Gara di Secondo Livello delle
-	Olimpiadi Italiane della Fisica}
-\ecvitem{Luglio 2011}{Maturità presso il Liceo Scientifico "Duca degli Abruzzi"
-	di Gorizia}
-\ecvitem{29 Settembre 2014}{Laurea triennale in Ingegneria dell'Informazione
-	presso l'Università degli studi di Padova (voto di laurea: 110/110)}
-\ecvitem{}{Titolo della tesi: \emph{Studio dell'efficienza di oscillatori LC
-	integrati per impulsatori Ultra-Wideband}}
-\ecvitem{12 Settembre 2016}{Laurea magistrale con lode in Ingegneria
-	Elettronica presso l'Università degli studi di Padova}
-\ecvitem{}{Titolo della tesi: \emph{Progetto di un amplificatore di potenza
-	integrato in classe J in tecnologia bipolare}}
-\ecvitem{da Ottobre 2016}{Ph.D. presso l'Univeristà degli studi di Padova nell'
-	ambito di circuti integrati per applicazioni in radiofrequenza}
+\vspace{0.5em}
+\section{Profilo}
+\ecvitem{}{Ingegnere elettronico con 10 anni di esperienza in ambito RF, analogico
+    e progettazione PCB, con una laurea magistrale in Ingegneria Gestionale per
+    coniugare competenze tecniche e gestione di progetto.}
 
-\ecvsection{Pubblicazioni}
-\ecvitem{ESSCIRC 2017}{P. Scaramuzza, C. Rubino, M. Tiebout, M. Caruso,
-	M. Ortner, A. Neviani, and A. Bevilacqua\\&
-	\emph{Class-AB and Class-J 22dBm SiGe HBT PAs for X-Band Radar
-	Systems}}
+\vspace{0.5em}
+\section{Esperienza lavorativa}
+\ecvitem{Apr. 2025 - presente}{Ingegnere Elettronico Senior presso
+    \textbf{Dronus S.p.A.}\\&
+    Progettazione di sistemi elettronici in ambito RF, PCB ad alta velocità ed
+    elettronica di potenza (inclusa la progettazione di BMS per applicazioni
+    drone). Sviluppo firmware per moduli RF.}
+\ecvitem{Ott. 2019 - Apr. 2025}{Hardware RF Application Engineer presso
+    \textbf{u-blox Italia S.p.A.}}
+\ecvitem{}{Progettazione e rilascio di schede demo per moduli cellulari,
+    supporto tecnico ai clienti per la validazione dei progetti e
+    interfacciamento con partner commerciali e il reparto R\&S.}
+\ecvitem{2020 - 2024}{\textbf{Consulente in Ingegneria Elettronica}\\&
+    Consulenza in progettazione RF, PCB ad alta velocità e system engineering
+    per clienti nei settori industriale e delle telecomunicazioni.}
+\ecvitem{Ott. 2017 - Mag. 2018}{Tirocinio presso
+    \textbf{Infineon Technologies Villach, Austria}}
+\ecvitem{}{Progettazione e misura di amplificatori di potenza integrati a
+    28\,GHz per reti cellulari 5G.}
+
+\vspace{0.5em}
+\section{Competenze}
+\ecvitem{\textbf{Elettronica}}{Progettazione di circuiti analogici, RF e
+    digitali con Altium, Cadence Allegro \& Virtuoso, ADS, KiCAD e LTSPICE.}
+\ecvitem{}{Simulazioni elettromagnetiche con HFSS, ADS Momentum e Sonnet.}
+\ecvitem{\textbf{Prototipazione e misure}}{Misura e caratterizzazione di
+    circuiti analogici, RF e a segnale misto.}
+\ecvitem{}{Test RF secondo gli standard ETSI/3GPP/FCC.}
+\ecvitem{\textbf{Programmazione}}{C, C++, Perl, Python, R,
+    MATLAB e altri.}
+\ecvitem{\textbf{Gestione di progetto}}{Pianificazione, allocazione delle risorse e gestione del rischio.}
+\ecvitem{\textbf{Controllo di versione}}{Git, SVN e Perforce.}
+\ecvitem{\textbf{Firmware embedded}}{Sviluppo firmware su STM32 e ESP32
+    tramite SDK vendor (STM32CubeWL, Arduino/ESP-IDF) e toolchain GCC/OpenOCD.}
+\ecvitem{\textbf{Documentazione tecnica}}{Redazione di documentazione tecnica
+    dettagliata per schede di sviluppo, validazione di progetto e
+    interfacciamento con clienti e partner.}
+\ecvitem{\textbf{Linux / Sysadmin}}{Utilizzo quotidiano di sistemi Linux e BSD,
+    scripting shell, gestione pacchetti e ambienti di sviluppo (incluso Nix).}
+\ecvitem{\textbf{Marketing e strategia}}{Gestione dell'innovazione,
+    pianificazione strategica e analisi di mercato, approfonditi nell'ambito
+    della laurea in Ingegneria Gestionale.}
 
 \clearpage
-\ecvsection{Competenze personali}
 \ecvmothertongue{Italiano}
 \ecvlanguageheader{(*)}
 \ecvlanguage{Inglese}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}
-\ecvlanguage{Tedesco}{\ecvBOne}{\ecvBOne}{\ecvATwo}{\ecvATwo}{\ecvATwo}
+\ecvlanguage{Tedesco}{\ecvATwo}{\ecvATwo}{\ecvATwo}{\ecvATwo}{\ecvATwo}
+\ecvlanguage{Sloveno}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}
 \ecvlanguagefooter{(*)}
-\ecvitem{}{Conoscenza della lingua tedesca affinata tramite soggiorni all'estero
-	durante il liceo:}
-\ecvitem{Luglio 2008}{Corso presso la scuola Euroinstitute(Insbruck, Austria)}
-\ecvitem{Luglio 2009}{Corso presso la scuola ActiLingua Academy (Vienna, Austria)}
-\ecvitem{Agosto 2010}{Corso presso la scuola Institut f\"ur Interkulturelle
-	Komunikation (Jena, Germania)}
+\ecvitem{}{} % spacer
 \ecvitem{Marzo 2011}{Certificazione di lingua inglese di livello C1 (CAE)}
-\ecvitem{Competenze informatiche}{Conoscenza di vari linguaggi di
-	programmazione e scripting tra cui: C/C++, Java, Javascript, HTML, CSS,
-	PHP, MATLAB e linguaggi funzionali}
-\ecvitem{}{Conoscenze di database (SQL), networking e abilità da sistemista con
-	sistemi operativi Linux e BSD}
-\ecvitem{Elettronica}{Da sempre interessato all'elettronica con parecchi
-	progetti all'attivo, in particolare in ambito analogico.\\&
-	Conoscenza del linguaggio VHDL.}
-\ecvitem{Profilo github}{\url{https://github.com/electricant}}
 
-\ecvsection{Attività}
-\ecvitem{da Febbraio 2014}{Segretario e socio attivo presso l'Associazione di
-	promozione sociale Faber Libertatis di Padova, associazione impegnata
-	nell'ambito del recupero di materiale informatico obsoleto e nel suo
-	ripristino con Software Libero per scopi di utilità sociale.}
-\ecvitem{Giugno 2015}{Vincitore della borsa di studio pre-laurea Roberto Rocca.}
-\ecvitem{da Settembre 2015}{Membro del progetto Morpheus dell'Università di
-	Padova dove si occupa della sottosezione elettronica. Il progetto	consiste
-	nella realizzazione di un prototipo di rover marziano per competere nella
-	\emph{European Rover Challenge} che si tiene in Polonia.}
-\ecvitem{Ottobre-Dicembre 2015}{Docente del corso di alfabetizzazione
-	informatica presso la Biblioteca Civica di Saonara (PD), organizzato con
-	la collaborazione del Comune di Saonara e dell'APS Faber Libertatis.}
-\ecvitem{a.a. 2015-2016}{Attività di tutorato presso il centro formativo
-	maschile ONAOSI di Padova}
-\ecvitem{dal 2014 al 2016}{Attività di supporto allo studio per studenti delle
-	scuole superiori e universitari}
-%\ecvsection{Allegati}
-%\ecvitem{}{Autocertificazione laurea triennale con esami}
-%\ecvitem{}{Autocertificazione iscrizione laurea magistrale con esami}
+\vspace{1em}
+\section{Istruzione}
+\ecvitem{Ott. 2022 - Mar. 2026}{\textbf{Laurea magistrale in Ingegneria Gestionale}
+    (110/110)\\&
+    Università degli studi di Udine, titolo della tesi: \emph{``Un modello
+    a fasi per l'implementazione della strategia della conoscenza: il caso
+    Dronus in un contesto di PMI in crescita''}}\
+\ecvitem{}{} % spacer
+\ecvitem{Ott. 2016 - Ott. 2019}{\textbf{Dottorato di ricerca} in Ingegneria
+    dell'Informazione, Università degli studi di Padova\\&
+    Tema: \emph{Amplificatori di potenza completamente integrati per
+    comunicazioni 5G}\\&
+    (relatori: Andrea Neviani, Andrea Bevilacqua)}
+\ecvitem{Nov. 2018}{Durante il dottorato, premiato all'\textbf{Huawei Italy
+    University Challenge} di Pavia, competizione volta a promuovere la
+    ricerca su circuiti integrati in silicio per ricetrasmettitori analogici,
+    RF, mmWave e ottici.}
+\ecvitem{}{} % spacer
+\ecvitem{Luglio 2017}{Esame di stato per l'abilitazione alla professione di
+    Ingegnere (Sezione A)}
+\ecvitem{}{} % spacer
+\ecvitem{2014 - 2016}{\textbf{Laurea magistrale in Ingegneria Elettronica}
+    (110/110 con lode)\\&
+    Università degli studi di Padova, titolo della tesi: \emph{``Progetto di
+    un amplificatore di potenza integrato in Classe J in tecnologia
+    bipolare''}}\
+\ecvitem{Giugno 2015}{Vincitore della borsa di studio pre-laurea
+    \textbf{Roberto Rocca Education Program} per merito accademico.}
+\ecvitem{}{} % spacer
+\ecvitem{2011 - 2014}{\textbf{Laurea triennale in Ingegneria dell'Informazione}
+    (110/110)\\&
+    Università degli studi di Padova, titolo della tesi: \emph{``Studio
+    dell'efficienza di oscillatori LC integrati per impulsatori
+    Ultra-Wideband''}}\
+\ecvitem{}{} % spacer
+\ecvitem{2006 - 2011}{\textbf{Liceo Scientifico ``Duca degli Abruzzi'' di Gorizia}}
+
+\vspace{1em}
+\section{Pubblicazioni}
+\ecvitem{TCAS-I 2018}{P. Scaramuzza, C. Rubino, M. Caruso, M. Tiebout,
+    A. Bevilacqua, and A. Neviani\\&
+    \emph{Class-J SiGe X-Band Power Amplifier Using a Ladder Filter-Based
+    AM-PM Distortion Reduction Technique}}
+\ecvitem{}{} % spacer
+\ecvitem{ESSCIRC 2017}{P. Scaramuzza, C. Rubino, M. Tiebout, M. Caruso,
+    M. Ortner,\\& A. Neviani, and A. Bevilacqua\\&
+    \emph{Class-AB and Class-J 22dBm SiGe HBT PAs for X-Band Radar Systems}}
+
 \end{europecv}
 \end{document}
